@@ -11,10 +11,6 @@ guessNum.onkeydown = function(event) {
   let code = event.keyCode;
   if (code === 13) {
     submitNum.click()
-  } else if (code === 38){
-    addNum.click()
-  } else if (code === 40){
-    subtractNum.click()
   }
 }
 
