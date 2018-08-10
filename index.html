@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game: Guess the Number!</title>
+  <!-- icon -->
+  <link rel="icon" type="image/png" href="image/icon.png">
+  <!-- css -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="wrapper">
+      <h1>Guess the Number!</h1>
+      <div class="content">
+        <p class="intro">Select a number between 1 and 100.</p>
+        <div class="input-gp">
+          <button id="subtract" class="edit">-</button>
+          <input type="number" id="guess" placeholder="77" autofocus>
+          <button id="add" class="edit">+</button>
+        </div>
+        <button id="submit" class="submit">guess</button>
+        <p class="feedback">Hey, take a guess!</p>
+        <div class="counter">Guessing times: <span>0</span></div>
+      </div>
+    </div>
+    <p class="desc">
+      <span class="code">enter</span>: submit your number <br>
+      <span class="code">↑</span>: add 1 on your number <br>
+      <span class="code">↓</span>: subtract 1 from your number <br>
+    </p>
+  </div>
+  <!-- javascript -->
+  <script src="js/script.js"></script>
+</body>
+</html>

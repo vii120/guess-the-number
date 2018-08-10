@@ -1,0 +1,165 @@
+/*------------------*/
+/* $Catalog
+/*------------------*/
+/* $Catalog
+//* $Variables
+/* $Global
+/* $Box
+/* $
+
+//*------------------*/
+//* $Font
+//*------------------*/
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower')
+@import url('https://fonts.googleapis.com/css?family=Concert+One')
+//*------------------*/
+//* $Variables
+//*------------------*/
+// color
+$primary-color: #94b4db
+$secondary-color: #c2d6eb
+$success-color: red
+$danger-color: #ed7b17
+$darkblue: #2958af
+$grey: #9d9b9b
+$darkgrey: #828282
+$bg-color: #f9f9f9
+// width
+$box-width: 360px
+// font
+$main-font: 'Concert One', cursive
+$edit-btn-font: 'Indie Flower', cursive
+
+/*------------------*/
+/* $Global
+/*------------------*/
+*
+  box-sizing: border-box
+body
+  margin: 0
+  padding: 0
+  background-color: $bg-color
+  font-family: $main-font
+  font-size: 20px
+  @media (max-width:576px)
+    font-size: 18px
+.container
+  max-width: 1140px
+  margin: 16px auto
+  padding: 0 16px
+
+input[type=number]
+  -moz-appearance: textfield
+  appearance: textfield
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button
+  -webkit-appearance: none
+
+
+/*------------------*/
+/* $Box
+/*------------------*/
+.wrapper
+  max-width: $box-width
+  margin: 0 auto
+  margin-top: 36px
+  background-color: $secondary-color
+  text-align: center
+  border-radius: 15px
+  overflow: hidden
+  @media (max-width:576px)
+    margin-top: 24px
+  h1
+    font-size: 1.7em
+    margin: 0
+    padding: 16px 8px
+    background-color: $primary-color
+  .content
+    padding: 0 12px
+    padding-bottom: 16px
+  .input-gp
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-bottom: 16px
+  #guess
+    width: 60px
+    height: 36px
+    font-size: 1.2em
+    font-family: inherit
+    padding: 6px 12px
+    margin: 0 8px
+    border-radius: 6px
+    border: none
+    outline: none
+    text-align: inherit
+  .edit
+    display: block
+    width: 28px
+    height: 28px
+    line-height: 24px
+    text-align: center
+    font-family: $edit-btn-font
+    font-size: 28px
+    font-weight: bold
+    outline: none
+    border: 2px solid $darkblue
+    border-radius: 50%
+    color: $darkblue
+    background-color: inherit
+    cursor: pointer
+    user-select: none
+    &:hover
+      background-color: $darkblue
+      color: #fff
+  .submit
+    display: flex
+    align-items: baseline
+    display: inline-block
+    height: 40px
+    margin: 0 auto
+    padding: 6px 16px
+    border-radius: 24px
+    border: 2px solid $darkblue
+    font-family: inherit
+    font-size: inherit
+    line-height: 1em
+    outline: none
+    color: $darkblue
+    background-color: inherit
+    cursor: pointer
+    user-select: none
+    transition: all .1s
+    &:hover
+      background-color: $darkblue
+      color: #fff
+    &:active
+      transform: translate(2px, 2px)
+  .feedback
+    font-size: 1.1em
+    &.warning
+      color: $danger-color
+    &.bingo
+      color: $success-color
+  .counter
+    color: $darkgrey
+.desc
+  max-width: calc(#{$box-width} - 30px)
+  margin: 16px auto
+  margin-bottom: 24px
+  padding: 0 8px
+  color: $darkblue
+  line-height: 32px
+  font-size: .9em
+  .code
+    display: inline-block
+    line-height: 1.2em
+    font-size: .85em
+    border: 1px solid 
+    border-radius: 8px
+    padding: 2px 8px
+    margin-right: 4px
+
+
+
+
